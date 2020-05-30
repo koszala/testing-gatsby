@@ -10,7 +10,7 @@ module.exports = {
     description: `Take a look around`,
     author: `pablo`,
   },
-  plugins: [
+  plugins: [`gatsby-plugin-sass`, 
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
