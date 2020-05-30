@@ -1,17 +1,17 @@
 import React from "react"
 import Header from "../components/header"
 import Nav from "../components/nav"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-    <>
-    <Nav />
-    <main style={{ background: `#ccc`, padding: `2rem` }}>
-    <p><img src='http://unsplash.it/1000/300?random&gravity=north' alt=''/></p>
-    <Header headerText="Hello Gatsby" />
+    <Layout>
+    <Header headerText="Testing Gatsby" />
+    <main style={{ background: `#ccc` }}>
+    <p><img src='http://unsplash.it/900/200?gravity=center' style={{ maxWidth: `100%` }} alt=''/></p>
     <p style={{ color: `hsl(0, 20%, 30%)` }}>Some text</p>
     </main>
-    </>
+    </Layout>
     );
   }
   

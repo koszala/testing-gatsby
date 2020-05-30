@@ -14,6 +14,9 @@ export default function Nav() {
         <li>
         <Link to="/css-modules" className={navStyles.link} activeClassName={navStyles.linkActive}>Css modules</Link>
         </li>
+        <li>
+        <Link to="/contact" className={navStyles.link} activeClassName={navStyles.linkActive}>Contact</Link>
+        </li>
         </ul>
         )
     }

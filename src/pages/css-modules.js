@@ -1,16 +1,15 @@
 import React from "react"
-
 import Container from "../components/container"
-import Nav from "../components/nav"
+import Header from "../components/header"
+import Layout from "../components/layout"
 
 export default function CssModules() {
     return (
-        <>
-        <Nav />
+        <Layout>
         <Container>
-            <h1>CSS modules</h1>
-            <p>Css Modules are cool</p>
+        <Header headerText="CSS Modules test" />
+        <p>Css Modules are cool</p>
         </Container>
-        </>
-    )
-}
+        </Layout>
+        )
+    }
