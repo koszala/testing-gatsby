@@ -1,6 +1,6 @@
 ---
 slug: "/blog/my-first-post"
-date: "2020-06-12"
+date: "2020-06-11"
 title: "My first blog post"
 ---
 
