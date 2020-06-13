@@ -1,6 +1,7 @@
-import React from 'react'
-import PostLink from '../components/post-link'
-import Layout from '../components/Layout'
+import React from "react"
+import PostLink from "../components/post-link"
+import Layout from "../components/layout"
+import { graphql } from "gatsby"
 
 const IndexPage = ({
     data: {
