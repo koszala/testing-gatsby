@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "../components/container"
-import Header from "../components/header"
 import Layout from "../components/layout"
+import Header from "../components/header"
 
 export default function CssModules() {
     return (
