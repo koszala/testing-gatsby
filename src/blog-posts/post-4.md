@@ -1,12 +1,4 @@
 ---
-<<<<<<< HEAD
-slug: "/blog/forth"
-date: "2020-06-14"
-title: "Testing test"
----
-
-There is hope for this
-=======
 slug: "/blog/add-post-from-github"
 date: "2020-06-14"
 title: "Testing adding github post"
@@ -16,4 +8,3 @@ Lorem ipsum dolor sit amet quam. Ut eget leo non magna. Vestibulum sollicitudin.
 Curae, Sed pharetra. Morbi risus risus pede, a lectus. Morbi vitae pede bibendum tempus. In pharetra. Donec accumsan luctus, ante ipsum at nulla. Morbi quam elit eu nibh. Curabitur gravida vitae, velit. Vivamus ullamcorper at, posuere vitae, placerat eget, neque. Praesent blandit venenatis, nunc libero, egestas non, iaculis at, metus. Etiam dolor. Nullam justo a enim vel massa. Vivamus consequat hendrerit. Donec urna mattis vel, consequat nunc. Suspendisse potenti. Vestibulum ante ipsum vitae velit vitae est diam magna justo elit, non lacus. Vivamus risus. Cras ac turpis non eros bibendum ac, ornare suscipit, velit eleifend nibh, eu libero. Maecenas nisl eu nibh. Aliquam erat id mi at ipsum. Praesent justo. Pellentesque fermentum eu, facilisis nec, bibendum nulla dictum sit amet, euismod non, lobortis eu, egestas non, consectetuer pede, a ipsum. Fusce enim. Suspendisse bibendum blandit, quam. Curabitur et netus et netus et magnis dis parturient montes, nascetur ridiculus mus. Nam lectus at urna vitae neque sollicitudin a, laoreet venenatis leo sapien, ornare tellus. Fusce iaculis, diam elementum leo. Phasellus lorem id nulla nulla, accumsan interdum. Suspendisse justo dolor, porttitor a.
 
 Sed leo vel turpis dolor, scelerisque justo dolor, placerat aliquet. Praesent wisi id ultrices velit sit amet dolor. Integer adipiscing quam at erat volutpat. Curabitur egestas. Mauris imperdiet vel, consequat non, lacus. Phasellus lacinia dapibus, libero lacinia aliquet. Praesent a enim non est. Aliquam fringilla, massa. Nunc vehicula. Aliquam semper. Sed aliquet at, mauris. Etiam aliquet, diam sodales nulla. Etiam aliquam at, suscipit sapien libero, pharetra leo. Integer at consequat eu, leo. Aliquam semper. Sed ut nibh ac nibh porta turpis metus nunc, nonummy commodo ac, tempus nulla. Phasellus vulputate et, accumsan rutrum, enim ac felis adipiscing elit. Aenean pede lobortis volutpat. Pellentesque orci dui, eget erat sed nulla. Maecenas pellentesque vel, arcu. Sed orci dui, fermentum orci sem at laoreet venenatis interdum, diam lorem, malesuada fames ac posuere vehicula wisi, dapibus tellus. Integer est. Aliquam sem. Etiam id quam. Ut eu ante. Vestibulum egestas purus. Maecenas mi non orci. Mauris eros porttitor a, aliquet lacinia id, mattis varius. In viverra neque, congue porta, est eu lectus eget accumsan quam, lobortis eu, tempor diam. Morbi cursus vitae, cursus dignissim dapibus.
->>>>>>> 656d17dbc5633068d5bb35d5a5960f42a30114c7
