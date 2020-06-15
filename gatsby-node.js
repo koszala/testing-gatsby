@@ -1,7 +1,8 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
 
-    const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
+    const blogPostTemplate = require.resolve(`./src/templates/blogPostTemplate.js`)
+    const newsTemplate = require.resolve(`./src/templates/newsTemplate.js`)
 
     const result = await graphql(`
     {
@@ -13,6 +14,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               slug  
+              content_type
             }
           }
         }
@@ -27,6 +29,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (node.frontmatter.content_type === 'blog-post') {
         createPage({
             path: node.frontmatter.slug,
             component: blogPostTemplate,
@@ -35,5 +38,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 slug: node.frontmatter.slug,
             },
         })
+      }
+      if (node.frontmatter.content_type === 'news') {
+        createPage({
+            path: node.frontmatter.slug,
+            component: newsTemplate,
+            context: {
+                // additional data can be passed via context
+                slug: node.frontmatter.slug,
+            },
+        })
+      }
     })
 }

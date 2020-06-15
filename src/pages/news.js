@@ -4,31 +4,31 @@ import PostLink from "../components/post-link"
 import Layout from "../components/layout"
 import Header from "../components/header"
 
-const BlogPosts = ({
+const News = ({
     data: {
         allMarkdownRemark: { edges },
     },
 }) => {
-    const Posts = edges
+    const News = edges
         .filter(edge => !!edge.node.frontmatter.date)
         .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
     return (
         <Layout>
-            <Header headerText="Blog"/>
-            <div>{Posts}</div>
+            <Header headerText="News" />
+            <div>{News}</div>
         </Layout>
     )
 
 }
 
-export default BlogPosts
+export default News
 
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {frontmatter: {content_type: {eq: "blog-post"}}}
+      filter: {frontmatter: {content_type: {eq: "news"}}}
       ) {
       edges {
         node {

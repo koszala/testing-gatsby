@@ -1,7 +1,8 @@
 ---
-slug: "/blog/local-test"
-date: "2020-06-15"
-title: "Local test"
+content-type: "blog-post"
+slug: "/blog/some-stuff"
+date: "2020-06-16"
+title: "Lorem ipsum"
 ---
 Lorem ipsum dolor sit amet quam. Ut eget leo non magna. Vestibulum sollicitudin. Praesent vitae est eu pulvinar ut, diam. Aliquam nisl. Vestibulum a mauris. Donec commodo, volutpat a, mauris. Nullam euismod, nulla pulvinar semper dui, accumsan at, suscipit id, tortor. Suspendisse gravida. Pellentesque fringilla id, nunc. Donec sit amet erat. Quisque vitae facilisis libero. Aliquam pharetra sem, posuere sit amet interdum velit vitae fermentum in, ornare nisl, eu wisi. Sed eros. Mauris purus. Aenean tortor in ipsum. Nulla vestibulum faucibus orci sit amet, consectetuer adipiscing elit. Sed mauris sed dui. Sed nibh. Cras dignissim. Pellentesque felis. Quisque arcu accumsan interdum. Quisque vehicula lectus. In hac habitasse platea dictumst. Nam molestie. Donec viverra auctor, sapien a odio non sem ipsum, vel wisi. Praesent nec erat. Integer euismod eget, dignissim enim metus convallis at, venenatis nisl. Morbi egestas, nunc felis, nec augue. Vivamus sit amet, magna. Suspendisse potenti. Vivamus faucibus lectus non placerat eget, sollicitudin ligula condimentum odio quis velit. Suspendisse ac lacus. Nullam laoreet, est ullamcorper et, lobortis velit. Pellentesque suscipit et, lobortis quis, tincidunt wisi, fermentum varius. Cras tincidunt.
 

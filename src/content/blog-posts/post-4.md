@@ -1,4 +1,5 @@
 ---
+content-type: "blog-post"
 slug: "/blog/add-post-from-github"
 date: "2020-06-14"
 title: "Testing adding github post"

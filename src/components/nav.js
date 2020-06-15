@@ -9,7 +9,10 @@ export default function Nav() {
         <Link to="/" className={navStyles.link} activeClassName={navStyles.linkActive}>Home</Link>
         </li>
         <li>
-        <Link to="/blog" className={navStyles.link} activeClassName={navStyles.linkActive}>Blog</Link>
+        <Link to="/news" className={navStyles.link} activeClassName={navStyles.linkActive} partiallyActive={true}>News</Link>
+        </li>
+        <li>
+        <Link to="/blog" className={navStyles.link} activeClassName={navStyles.linkActive} partiallyActive={true}>Blog</Link>
         </li>
         <li>
         <Link to="/about" className={navStyles.link} activeClassName={navStyles.linkActive}>About</Link>
