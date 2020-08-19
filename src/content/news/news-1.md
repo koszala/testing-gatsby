@@ -3,7 +3,7 @@ content-type: "news"
 slug: "/news/first-news"
 date: "2020-06-10"
 title: "Starting some news"
-photo: "./news-1.jpg"
+featured: ./news-1.jpg
 ---
 
 Voluptate sunt voluptate do deserunt consectetur nulla magna labore quis aliquip duis ex ut labore. Commodo ex proident esse excepteur excepteur esse proident adipisicing et. Ex in occaecat tempor excepteur irure. Commodo ut ut dolor est laboris dolore ea excepteur non. Proident fugiat ut dolor elit ex aliquip.

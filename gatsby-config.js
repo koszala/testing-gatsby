@@ -6,11 +6,20 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Testing Gaysby`,
+    title: `Testing Gatsby`,
     description: `Take a look around`,
     author: `pablo`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/news`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,7 +49,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`, 
-    `gatsby-transformer-remark`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
   ],

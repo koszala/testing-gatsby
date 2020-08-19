@@ -1,13 +1,17 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Header from "../components/header"
 
-export default function Template({
-    data, // this prop will be injected by the GraphQL query below.
-}) {
+export default function ({ data }) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html, timeToRead } = markdownRemark
+    let featuredImgFluid = frontmatter.featured.childImageSharp.fluid
+
+
+    console.log(data)
+
     return (
         <Layout>
             <div className="news-container">
@@ -15,14 +19,13 @@ export default function Template({
                     <Header headerText={frontmatter.title}/>
                     <h2>{frontmatter.date}</h2>
                     <p>Time to read: {timeToRead} min</p>
-                    <div style={{ display: 'flex' }}>
-                        <p><img src={frontmatter.photo.publicURL} alt="" style={{ maxHeight: '200px', marginRight: '1rem' }}/></p>
-                        <div
-                            className="news-content"
-                            dangerouslySetInnerHTML={{ __html: html }}
-                        />
+                    <Img fluid={featuredImgFluid} />
+                    
+                    <div
+                        className="news-content"
+                        dangerouslySetInnerHTML={{ __html: html }}
+                    />
 
-                    </div>
                 </div>
             </div>
             <Link to="/blog">Return</Link>
@@ -31,18 +34,29 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query NewsItemQuery($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "dd, DD MMMM, YYYY")
         slug
         title
-        photo {
-            publicURL
+        featured {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
       timeToRead
+    }
+    allImageSharp {
+      nodes {
+        fluid {
+          srcSet
+        }
+      }
     }
   }
 `
