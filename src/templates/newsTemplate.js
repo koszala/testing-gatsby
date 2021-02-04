@@ -4,13 +4,12 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Header from "../components/header"
 
-export default function ({ data }) {
+export default function NewsTemplate({ data }) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html, timeToRead } = markdownRemark
     let featuredImgFluid = frontmatter.featured.childImageSharp.fluid
 
 
-    console.log(data)
 
     return (
         <Layout>
@@ -28,7 +27,7 @@ export default function ({ data }) {
 
                 </div>
             </div>
-            <Link to="/blog">Return</Link>
+            <Link to="/news">Return</Link>
         </Layout>
     )
 }
@@ -43,20 +42,13 @@ export const pageQuery = graphql`
         title
         featured {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
       timeToRead
-    }
-    allImageSharp {
-      nodes {
-        fluid {
-          srcSet
-        }
-      }
     }
   }
 `
